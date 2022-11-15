@@ -42,6 +42,7 @@ nav .fa {
   color: #fff;
   text-decoration: none;
   font-size: 13px;
+  transition: 0.3s;
 }
 .nav-links ul li::after {
   content: '';
@@ -104,32 +105,41 @@ nav .fa {
 
   .nav-links ul li {
     display: block;
-    background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));
+    background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0),rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.5));
   }
   .nav-links {
     position: absolute;
-    background: linear-gradient(rgba(255,0,0,1),rgba(255,0,0,1), rgba(255,0,0,0.7),rgba(255,0,0,0.2));
+    background: linear-gradient(rgba(25,25,112,1),rgba(25,25,112,1), rgba(25,25,112,0.5),rgba(25,25,112,0.2));
     height: 100vh;
-    width: 150px;
+    width: 140px;
     top: 0;
-    right: -150px;
+    right: -140px;
     text-align: right;
     z-index: 2;
+    transition: 0.3s;
+  }
+  .nav-links a:hover {
+    color: red;
     transition: 0.3s;
   }
   .nav-links ul li:hover::after {
     width: 0%;
   }
   nav .fa {
+    color: #fff;
     display: block;
     text-align: right;
     margin: 15px;
     font-size: 22px;
     cursor: pointer;
+    transition: 0.3s;
   }
   nav .fa-bars {
-    color: #fff;
     margin: 7px;
+  }
+  nav .fa:hover {
+    color: #f44336;
+    transition: 0.3s;
   }
   nav img{
     width: 45px;
