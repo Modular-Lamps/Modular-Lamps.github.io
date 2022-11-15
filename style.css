@@ -2,7 +2,8 @@
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
-  overflow-x: hidden
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .header {
@@ -69,7 +70,7 @@ nav .fa {
 }
 .text-box p {
   margin: 10px auto 30px;
-  font-size: 15px;
+  font-size: 18px;
 }
 
 .organ-btn {
@@ -78,7 +79,7 @@ nav .fa {
   color: #fff;
   border: 3px solid #fff;
   padding: 12px 34px;
-  font-size: 13px;
+  font-size: 15px;
   background: transparent;
   position: relative;
   cursor: pointer;
@@ -91,14 +92,14 @@ nav .fa {
 
 @media(max-width: 700px) {
   .text-box h1 {
-    font-size: 30px;
+    font-size: 40px;
   }
   .text-box p {
-    font-size: 10px;
+    font-size: 15px;
   }
   .organ-btn {
     padding: 10px 20px;
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .nav-links ul li {
@@ -121,16 +122,17 @@ nav .fa {
   }
   nav .fa {
     display: block;
-    margin: 10px;
     text-align: right;
+    margin: 15px;
     font-size: 22px;
     cursor: pointer;
   }
   nav .fa-bars {
     color: #fff;
+    margin: 7px;
   }
   nav img{
-    width: 50px;
+    width: 45px;
   }
   
 }
