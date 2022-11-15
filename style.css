@@ -24,7 +24,7 @@ nav {
 nav img{
   width: 70px;
 }
-nav .fa {
+nav .fa-regular {
   display: none;
 }
 .nav-links {
@@ -85,6 +85,8 @@ nav .fa {
   position: relative;
   cursor: pointer;
   transition: 0.5s;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 .organ-btn:hover {
   border: 3px solid #f44336;
@@ -125,7 +127,7 @@ nav .fa {
   .nav-links ul li:hover::after {
     width: 0%;
   }
-  nav .fa {
+  nav .fa-regular {
     color: #fff;
     display: block;
     text-align: right;
@@ -134,15 +136,41 @@ nav .fa {
     cursor: pointer;
     transition: 0.3s;
   }
-  nav .fa-bars {
+  nav .fa-square-plus {
     margin: 7px;
   }
-  nav .fa:hover {
+  nav .fa-regular:hover {
     color: #f44336;
     transition: 0.3s;
   }
   nav img{
     width: 45px;
   }
-  
+}
+
+/* footer */
+
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+  background: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0.7));
+  color: #fff;
+}
+
+.footer h4 {
+  margin-bottom: 2px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.icons .fa-brands {
+  color: rgb(255,255,153);
+  margin: 0 13px;
+  cursor: pointer;
+  padding: 18px 0;
+}
+
+.fa-heart {
+  color: #f44336;
 }
