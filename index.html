@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta name="viewport" content="with=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css"> 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet" type='text/css'>
+
+  <title>Modular Lamps</title>
+
+</head>
+
+<body>
+
+  <section class="header">
+    <nav>
+      <a href="index.html"><img src="images/logo.png"></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times-circle" onclick="hideMenu()"></i>
+
+        <ul>
+          <li><a href="">HOME</a></li>
+          <li><a href="">ABOUT</a></li>
+          <li><a href="">DOCUMENTATION</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+  <div class="text-box">
+    <h1>Modular Lamps</h1>
+    <p>Small project with high goals<br>Made with 💛</p>
+    <a href="https://github.com/Modular-Lamps" class="organ-btn">REPOSITORIES</a>
+  </div>
+
+  </section>
+
+  <!--   Javascript for Toogle Menu  -->
+  <script>
+
+    var navLinks = document.getElementById("navLinks")
+
+    function showMenu() {
+      navLinks.style.right = "0"
+    }
+    function hideMenu() {
+      navLinks.style.right = "-150px"
+    }
+
+  </script>
+
+</body>
+</html>

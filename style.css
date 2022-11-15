@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(images/blackhole.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  padding: 1% 5%;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img{
+  width: 70px;
+}
+nav .fa {
+  display: none;
+}
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+  background-image: none;
+}
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+}
+.nav-links ul li::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: rgba(255, 0, 0, 1);
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+.text-box {
+  width: 90%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+.text-box h1 {
+  font-size: 62px;
+}
+.text-box p {
+  margin: 10px auto 30px;
+  font-size: 15px;
+}
+
+.organ-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 3px solid #fff;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.organ-btn:hover {
+  border: 3px solid #f44336;
+  transition: 0.5s;
+}
+
+@media(max-width: 700px) {
+  .text-box h1 {
+    font-size: 30px;
+  }
+  .text-box p {
+    font-size: 10px;
+  }
+  .organ-btn {
+    padding: 10px 20px;
+    font-size: 10px;
+  }
+
+  .nav-links ul li {
+    display: block;
+    background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));
+  }
+  .nav-links {
+    position: absolute;
+    background: linear-gradient(rgba(255,0,0,1),rgba(255,0,0,1), rgba(255,0,0,0.7),rgba(255,0,0,0.2));
+    height: 100vh;
+    width: 150px;
+    top: 0;
+    right: -150px;
+    text-align: right;
+    z-index: 2;
+    transition: 0.3s;
+  }
+  .nav-links ul li:hover::after {
+    width: 0%;
+  }
+  nav .fa {
+    display: block;
+    margin: 10px;
+    text-align: right;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  nav .fa-bars {
+    color: #fff;
+  }
+  nav img{
+    width: 50px;
+  }
+  
+}
