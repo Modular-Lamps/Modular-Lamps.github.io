@@ -18,10 +18,19 @@
   <section class="header">
     <nav>
 
+      <div style="position: absolute;"">
+        <div style="position: absolute;" onclick="announcment()" id="announcment-bg"></div>
+        <a style="text-decoration: none; position: absolute;" id="announcment">
 
-      <a style="cursor:not-allowed ; text-decoration: none;"><h1 style="font-size: 20px; text-align: center; color: #f44336; background-color: yellow; border-radius: 20px; padding: 8px; margin-top: 5px;""><i class="fa-solid fa-wifi"></i> Under development</h1></a>
+          <!-- ANNOUNCMENT HERE -->
+
+          <h1 onclick="announcment()"><i class="fa-solid fa-wifi"></i> Under development</h1>
 
 
+        </a>
+      </div>
+
+      <div></div>
       <div class="nav-links" id="navLinks">
         <i class="fa-regular fa-square-minus" onclick="hideMenu()"></i>
 
@@ -56,16 +65,55 @@
 
   </section>
 
-  <!--   Javascript for Toogle Menu  -->
+  <!--   Javascript -->
   <script>
 
+    var announcmentEl = document.getElementById("announcment")
+    var announcmentBg = document.getElementById("announcment-bg")
     var navLinks = document.getElementById("navLinks")
+    var width = window.matchMedia("(max-width: 700px)")
+
+    function checkWidth() {
+      if(announcmentEl.style.opacity == '1') {
+        if(!width.matches) {
+          announcmentBg.style.paddingRight = "400px"
+          announcmentBg.style.paddingBottom = "36px"
+        }
+        else {
+          announcmentBg.style.paddingRight = "240px"
+          announcmentBg.style.paddingBottom = "34px"
+        }
+      }
+    }
+    checkWidth() // Call listener function at run time
+    width.addListener(checkWidth) // Attach listener function on state changes
+
 
     function showMenu() {
       navLinks.style.right = "0"
     }
     function hideMenu() {
       navLinks.style.right = "-140px"
+    }
+
+    function announcment() {
+      if(announcmentEl.style.opacity == '0' || !announcmentEl.style.opacity) {
+        announcmentBg.style.padding = "0px"
+        !width.matches ? announcmentBg.style.paddingRight = "400px" :   announcmentBg.style.paddingRight = "240px"
+        !width.matches ? announcmentBg.style.paddingBottom = "36px" :   announcmentBg.style.paddingBottom = "34px"
+        announcmentBg.style.backgroundColor = 'rgb(255, 255, 0)'
+        setTimeout(() => {
+          announcmentEl.style.opacity = "1"
+        }, 500);
+      }
+      else {
+        announcmentEl.style.opacity = "0"
+        setTimeout(() => {
+          announcmentBg.style.padding = "10px"
+          announcmentBg.style.backgroundColor = 'rgb(255, 0, 0)'
+        }, 500);
+      }
+
     }
 
   </script>

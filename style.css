@@ -17,13 +17,46 @@
 
 nav {
   display: flex;
-  padding: 1% 5%;
+  padding: 1% 1%;
   justify-content: space-between;
   align-items: center;
 }
 nav .fa-regular {
   display: none;
 }
+
+
+nav #announcment-bg {
+  background-color: rgb(255, 0, 0); 
+  top: -6px;
+  margin-left: 5px;
+  padding: 10px;
+  border-radius: 20px;
+  transition: 1s;
+  cursor: help;
+}
+
+nav #announcment {
+  display: block;
+  font-size: 22px;
+  text-align: center;
+  color: #f44336;  
+  cursor: help;
+  top: -8px;
+  width: 400px;
+  transition: 1s;
+  opacity: 0;
+}
+
+@media(max-width: 700px) {
+  nav #announcment {
+    width: 250px;
+    top: -3px;
+    font-size: 15px;
+    opacity: 0;
+  }
+}
+
 .nav-links {
   flex: 1;
   text-align: right;
@@ -166,6 +199,7 @@ nav .fa-regular {
 /* footer */
 
 .footer {
+  min-height: 150px;
   width: 100%;
   text-align: center;
   padding: 30px 0;
@@ -188,7 +222,7 @@ nav .fa-regular {
 /* --- About page --- */
 
 .sub-header {
-  height: 35vh;
+  height: 400px;
   width: 100%;
   background-image: linear-gradient(rgba(4,9,30,0.6),rgba(4,9,30,0.6)), url(images/galaxy.jpg);
   background-position: center;
@@ -197,10 +231,11 @@ nav .fa-regular {
   color: #fff;
 }
 .sub-header h3 {
-  margin-top: 20px;
+  margin-top: 80px;
   font-size: 40px;
 }
 .about {
+  min-height: calc(100vh - 400px - 150px);
   width: 100%;
   margin: auto;
   padding: 25px;
@@ -232,5 +267,10 @@ nav .fa-regular {
   .about-col {
     width: 100%;
   }
-
+  .sub-header {
+    height: 250px;
+  }
+  .sub-header h3 {
+    margin-top: 50px;
+  }
 }
