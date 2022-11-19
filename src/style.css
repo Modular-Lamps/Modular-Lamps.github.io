@@ -42,7 +42,7 @@ nav #announcment {
   text-align: center;
   color: #f44336;  
   cursor: help;
-  top: -8px;
+  top: -7px;
   width: 400px;
   transition: 1s;
   opacity: 0;
@@ -51,7 +51,7 @@ nav #announcment {
 @media(max-width: 700px) {
   nav #announcment {
     width: 250px;
-    top: -3px;
+    top: -2px;
     font-size: 15px;
     opacity: 0;
   }
