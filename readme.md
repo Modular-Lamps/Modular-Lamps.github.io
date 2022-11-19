@@ -9,5 +9,5 @@
 - 🏗️ [Firmware repository](https://github.com/Modular-Lamps/firmware/)
 
 ## ⚙️ Updates
-- ⚠️ Critical or bug-fixing updates are provided at least every week
+- ⚠️ Critical or bug-fixing updates are provided every week
 - 🌋 New features are added at least once every 3 months
