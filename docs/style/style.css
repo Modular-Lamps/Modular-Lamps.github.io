@@ -45,38 +45,6 @@ nav .fa-regular {
   display: none;
 }
 
-
-nav #announcment-bg {
-  background-color: rgb(255, 0, 0); 
-  top: -6px;
-  margin-left: 5px;
-  padding: 10px;
-  border-radius: 20px;
-  transition: 1s;
-  cursor: help;
-}
-
-nav #announcment {
-  display: block;
-  font-size: 22px;
-  text-align: center;
-  color: #f44336;  
-  cursor: help;
-  top: -7px;
-  width: 400px;
-  transition: 1s;
-  opacity: 0;
-}
-
-@media(max-width: 700px) {
-  nav #announcment {
-    width: 250px;
-    top: -2px;
-    font-size: 15px;
-    opacity: 0;
-  }
-}
-
 .nav-links {
   flex: 1;
   text-align: right;
@@ -182,7 +150,6 @@ nav #announcment {
     top: 0;
     right: -140px;
     text-align: right;
-    z-index: 2;
     transition: 0.3s;
   }
   .nav-links a:hover {
@@ -209,6 +176,7 @@ nav #announcment {
   }
   nav .fa-square-plus {
     margin: 7px;
+    margin-left: 90vw;
   }
   nav .fa-regular:hover {
     color: #f44336;
