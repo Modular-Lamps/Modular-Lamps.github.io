@@ -3,7 +3,7 @@
 <head>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css"> 
+  <link rel="stylesheet" href="../style/style.css"> 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,21 +16,8 @@
 <body>
 
   <section class="header">
+
     <nav>
-
-      <div style="position: absolute;"">
-        <div style="position: absolute;" onclick="announcment()" id="announcment-bg"></div>
-        <a style="text-decoration: none; position: absolute;" id="announcment">
-
-          <!-- ANNOUNCMENT HERE -->
-
-          <h1 onclick="announcment()"><i class="fa-solid fa-wifi"></i> Under development</h1>
-
-
-        </a>
-      </div>
-
-      <div></div>
       <div class="nav-links" id="navLinks">
         <i class="fa-regular fa-square-minus" onclick="hideMenu()"></i>
 
@@ -43,30 +30,27 @@
       <i class="fa-regular fa-square-plus" onclick="showMenu()"></i>
     </nav>
 
+
+    <div class="announcment">
+      <p id="announcment"></p>
+    </div>
+
+
     <div class="text-box">
-      <img src="images/logo.png"><br><br>
+      <img src="../images/logo.png"><br><br>
       <h1>Modular Lamps</h1>
       <p><i class="fa-solid fa-fire"></i> Small project with high goals</p>
-      <a href="https://github.com/Modular-Lamps" target="_blank" class="organ-btn">REPOSITORIES</a>
+      <a href="https://github.com/Modular-Lamps" target="_blank" class="organ-btn">GITHUB</a>
       <a class="organ-btn">DOCUMENTATION</a>
     </div>
 
   </section>
 
   
-  <!--   Footer  -->
-  
-  <section class="footer">
-    <div class="icons">
-      <a href="https://github.com/Bajojajo-xD" target="_blank"><i class="fa-brands fa-github"></i></a>
-      <a href="https://www.facebook.com/LukBlasz/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-    </div>
-    <p>Made with <i class="fa-regular fa-heart"></i> by Bajojajo-xD</p>
+  <iframe src="./footer.html" seamless scrolling="no"></iframe>
 
-  </section>
-
-  <script src="scripts/navigationBar.js"></script>
-  <script src="scripts/announcment.js"></script>
+  <script src="../scripts/navigationBar.js"></script>
+  <script src="../scripts/announcment.js"></script>
 
 </body>
 </html>
