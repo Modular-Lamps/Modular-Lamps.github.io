@@ -199,6 +199,7 @@ nav .fa-regular {
   margin-top: 80px;
   font-size: 40px;
 }
+
 .about {
   min-height: calc(100vh - 400px - 150px);
   width: 100%;
@@ -210,7 +211,8 @@ nav .fa-regular {
   font-size: 35px;
   color: #fff;
 }
-.about-col {
+
+.about .col {
   color: #fff;
   float:left;
   margin-top: 30px;
@@ -219,23 +221,101 @@ nav .fa-regular {
   font-size: 15px;
   text-align: center;
 }
+.about .col img {
+  width: 100%;
+}
+
 .about .row::after {
   content: "";
   display: table;
   clear: both;
 }
-.about-col img {
-  width: 100%;
-}
 
 @media(max-width: 700px) {
-  .about-col {
-    width: 100%;
-  }
   .sub-header {
     height: 250px;
   }
   .sub-header h3 {
     margin-top: 50px;
+  }
+
+  .about .col {
+    width: 100%;
+  }
+}
+
+/* --- Docs page --- */
+
+.docs-header {
+  height: 400px;
+  width: 100%;
+  background-image: linear-gradient(rgba(4,9,30,0.8),rgba(4,9,30,0.8)), url(../images/space-exploration.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+}
+.docs-header h3 {
+  margin-top: 80px;
+  font-size: 40px;
+}
+
+.docs {
+  min-height: calc(100vh - 400px - 150px);
+  width: 100%;
+  margin: auto;
+  padding: 25px;
+  background: rgb(26, 25, 25);
+}
+.docs h2 {
+  font-size: 35px;
+  color: #fff;
+}
+
+.docs .col {
+  color: #fff;
+  float:left;
+  margin-top: 30px;
+  width: 58%;
+  min-height: 80px;
+  font-size: 15px;
+  text-align: right;
+  margin-left: 2%;
+}
+.docs .sub-col {
+  color: #fff;
+  float:left;
+  margin-top: 30px;
+  width: 40%;
+  min-height: 80px;
+  font-size: 15px;
+  text-align: right;
+}
+
+.docs .col img {
+  width: 100%;
+}
+
+.docs .row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media(max-width: 700px) {
+  .docs-header {
+    height: 250px;
+  }
+  .docs-header h3 {
+    margin-top: 50px;
+  }
+
+  .docs .col {
+    width: 100%;
+    text-align: center;
+  }
+  .docs .sub-col {
+    width: 100%;
+    text-align: center;
   }
 }

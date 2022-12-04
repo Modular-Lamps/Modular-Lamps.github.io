@@ -1,14 +1,14 @@
 var globalAnnouncment = 
 
 //HERE WRITE ANNOUNCMENT
-'<i class="fa-solid fa-bell"></i> In beta version'
+'<i class="fa-solid fa-bell"></i> Site not fully ready'
 
 
 
 //HERE WRITE ADDITIONAL ANNOUNCMENTS FOR SPECIFIED FILES
 var mainAnnouncment = '',
     aboutAnnouncment = '',
-    docsAnnouncment = '<i class="fa-solid fa-truck-fast"></i> Docs not ready, working on it'
+    docsAnnouncment = '<i class="fa-solid fa-house-circle-exclamation"></i> Docs under building'
 
 
 var fileName = location.href.split("/").slice(-1), text;
